@@ -1,16 +1,32 @@
 # Meeting
+•	During this meeting, we continued to discuss about the literature review that we are conducting. We had a focus on categorising the different methods that we have encountered so we will have a better idea of what is already out there. From that literature review, Arnaud and Barrett suggested that we can pick an interesting way of navigating and try to implement a variation of it. 
 
-•	During the meeting, we continued to discuss more literature review material, so we can build on our understanding. Our supervisors advised an additional 3 more papers from what we already have will be adequate for our review.
-•	We also continued to brainstorm different ideas for navigation methods that we can implement. Some of the ideas include the use of ‘portals’ or using a ‘map’ which is on a person’s hand and they can choose a destination to teleport to. 
-•	Barrett also suggested that as the mesh may be too difficult to clean up during time timeframe, it may be better that we focus on implementing VR methods. He suggested that we instead just use colliders to prevent the player from falling through the model.
+•	We also decided that since we are beginning to development, we should use version control software like BitBucket or GitHub so that we can collaborate. 
 
-# Research Participation
-Arnaud also invited us to partake in a VR experiment he was conducting as it would help with his study but also enable us to learn how a research experiment is conducted. Through that experience, I feel more confident in designing an experiment and also how to conduct it. 
+•	Our supervisors advised us to continue our literature review and keep expanding it as that is part of project outcome. 
+
+•	Barrett started exploring some ideas with us just before the meeting has ended. He mentioned a ‘curved pointer’ to specify destination by teleport and that is what we will try to implement.
+
 # Development
-•	We decided that it would be better to implement version control using Unity Cloud rather than a platform like GitHub or GitLab. It provides many benefits such as native integration with unity and support for larger files to be uploaded to. However, the drawbacks are that to support more than three users, it would mean that it would cost a monthly fee. For our use case however, that should be manageable as we can share it with one of our supervisors. 
-•	Continuing development, I explored the options into using a map on a hand to teleport to a specified location. Currently, we have a simple block with buttons to test teleportation. When a player points a laser towards the button, it would invoke an event and that would then subsequently teleport the player to another location.
-•	I also fixed the collision problem that we have faced earlier that enable the user to move through the wall. This was achieved by using the VRTK_Body_Physics script which added physics to the CameraRig. A basic capsule game object was associated with the physics to act as the player body. 
-# Goals
-•	Implement more navigation methods
-•	Continue literature review
+•	We have decided that we would be using GitHub for our version control as students, we have access to private repositories which we can share with our supervisor. One problem that I have encountered already is that GitHub was never designed for large files. As our models have many images and large file types (i.e. ‘.obj’ and ‘.xyz’), GitHub will not accept it. To fix this problem, I investigated adding. gitignore files. After numerous attempts, some files were still too large to be uploaded to GitHub. 
+
+•	I then investigated into Git Large File Storage which can be integrated with GitHub. This required adding ‘.gitattribute’ file to our repository so GitHub knows where to download the large files from. This allowed us to successfully add our repository to Github.
+
+•	Update: When loading the repository from another device, a problem occurred where scripts would be missing from game objects. I initially thought this was caused by not saving the scene, but the problem persists. This will need be investigated further next week
+
+•	Rather than reinventing the wheel, we decided to use Virtual Reality Toolkit to facilitate with implementing navigation. It has many pre-existing libraries, files and scripts which are tailored to VR development. One helpful feature is that it has a VR Simulator feature. As we currently do not have access to VR devices right now, it enables us to still try to implement features. 
+
+•	I had explored VRTK to find out its feature. It saves us a lot of time trying to incorporate the controllers and headset into Unity as it already has built in managers that does the work for us. However, it did have some compatibility issues with setting up the SDK. Furthermore, controlling controller in the simulator is difficult due to its innate limitations. 
+
+•	I was able to implement pointers where a user can fire a ‘laser’ like pointer and it will teleport them to a destination based on where it is pointed at.
+
+•	One issue with the implementation right now is that the CameraRig (the player) currently have no collision logic with walls which means it can move through walls. Adding a basic collider to the CameraRig doesn’t appear to have any affect and this problem will need to be investigated later.
+
+
+# Goal
+•	Produce solution to fix version control
+
+•	Continue to explore more navigation methods and implement them
+
+•	Fix collision problem with player 
 

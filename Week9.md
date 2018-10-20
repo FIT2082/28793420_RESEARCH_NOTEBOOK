@@ -12,6 +12,7 @@
 
 ![
 ](Week9Image2.png)
+
 •	After figuring that out, I was able to implement the spawning of portals without problems however, it is still buggy. Firstly, when it is shot to a wall, it also displays partially (as it is a plane and needs to move forward a little bit). Also, when it is shot against game objects (e.g. barrels) it would pierce through it and look unnatural. Lastly, as the portal is currently a plane, it doesn’t look like a portal. 
 # Goals
 •	Combine portal with map functionality 

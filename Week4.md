@@ -1,4 +1,4 @@
-#Meeting
+# Meeting
 In this meeting, we discussed the Project Specification in much greater detail and established that this would be our main focus for the week with our supervisors. Within that meeting, we also further clarified any ambiguities or queries we had about the project and established what direction that we would want to take our project in. 
 
 Currently, we plan to
@@ -8,10 +8,10 @@ Currently, we plan to
 
 Furthermore, the meeting also provided an insight of what literature is out there in relation to VR navigation. Our supervisors gave us a few ideas to explore. 
 
-#Project Specification 
-After discussing the project specification with the supervisors, we established a general structure for it. Certain sections were particualrly useful towards our understanding of the project and also gave us a better idea of what direction we want to head towards. When I read through different literature, it has many great ideas which we can use and also add to our literature collection for further analysis. 
+# Project Specification
+After discussing the project specification with the supervisors, we established a general structure for it. Certain sections were particualrly useful towards our understanding of the project and also gave us a better idea of what direction we want to head towards. When we read through different literature, it had many great ideas which we can use and also add to our literature collection for further analysis. 
 
-#Plan next week
+# Goals Next Week
 - Continue learning Unity
 - Clean up scanned model
 - Implement basic navigation in Unity 

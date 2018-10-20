@@ -11,5 +11,6 @@
 
 # Goals
 •	Implement more navigation methods
+
 •	Continue literature review
 

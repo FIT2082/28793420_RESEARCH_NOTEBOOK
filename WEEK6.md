@@ -11,7 +11,7 @@
 •   We had explored VRTK to find out its feature. It saves us a lot of time trying to incorporate the controllers and headset into Unity as it already has built in managers that does the work for us. However, it did have some compatitiblity issues with setting up the SDK. Furthermore, controlling controller in the simulator is difficult due to its innate limitations.<br>
 •   We was able to implement pointers where a user can fire a ‘laser’ like pointer and it will teleport them to a destination based on where it is pointed at.<br>
 •   One issue with the implementation right now is that the CameraRig (the player) currently have no collision logic with walls which means it can move through walls. Adding a basic collider to the CameraRig doesn’t appear to have any affect and this problem will need to be investigated later.</p>
-<p>#Goals Next Week<br>
+<h1><a id="Meeting_0"></a>Goals Next Week</h1>
 •   Produce solution to fix version control<br>
 •   Continue to explore more navigation methods and implement them<br>
 •   Fix collision problem with player</p>

@@ -8,17 +8,17 @@
 •	Barrett started exploring some ideas with us just before the meeting has ended. He mentioned a ‘curved pointer’ to specify destination by teleport and that is what we will try to implement.
 
 # Development
-•	We have decided that we would be using GitHub for our version control as students, we have access to private repositories which we can share with our supervisor. One problem that I have encountered already is that GitHub was never designed for large files. As our models have many images and large file types (i.e. ‘.obj’ and ‘.xyz’), GitHub will not accept it. To fix this problem, I investigated adding. gitignore files. After numerous attempts, some files were still too large to be uploaded to GitHub. 
+•	We have decided that we would be using GitHub for our version control as students, we have access to private repositories which we can share with our supervisor. One problem that I have encountered already is that GitHub was never designed for large files. As our models have many images and large file types (i.e. ‘.obj’ and ‘.xyz’), GitHub will not accept it. To fix this problem, we investigated adding gitignore files. After numerous attempts, some files were still too large to be uploaded to GitHub. 
 
-•	I then investigated into Git Large File Storage which can be integrated with GitHub. This required adding ‘.gitattribute’ file to our repository so GitHub knows where to download the large files from. This allowed us to successfully add our repository to Github.
+•	We then investigated into Git Large File Storage which can be integrated with GitHub. This required adding ‘.gitattribute’ file to our repository so GitHub knows where to download the large files from. This allowed us to successfully add our repository to Github.
 
-•	Update: When loading the repository from another device, a problem occurred where scripts would be missing from game objects. I initially thought this was caused by not saving the scene, but the problem persists. This will need be investigated further next week
+•	Update: When loading the repository from another device, a problem occurred where scripts would be missing from game objects. We initially thought this was caused by not saving the scene, but the problem persists. This will need be investigated further next week
 
 •	Rather than reinventing the wheel, we decided to use Virtual Reality Toolkit to facilitate with implementing navigation. It has many pre-existing libraries, files and scripts which are tailored to VR development. One helpful feature is that it has a VR Simulator feature. As we currently do not have access to VR devices right now, it enables us to still try to implement features. 
 
-•	I had explored VRTK to find out its feature. It saves us a lot of time trying to incorporate the controllers and headset into Unity as it already has built in managers that does the work for us. However, it did have some compatibility issues with setting up the SDK. Furthermore, controlling controller in the simulator is difficult due to its innate limitations. 
+•	We had explored VRTK to find out its feature. It saves us a lot of time trying to incorporate the controllers and headset into Unity as it already has built in managers that does the work for us. However, it did have some compatibility issues with setting up the SDK. Furthermore, controlling controller in the simulator is difficult due to its innate limitations. 
 
-•	I was able to implement pointers where a user can fire a ‘laser’ like pointer and it will teleport them to a destination based on where it is pointed at.
+•	We was able to implement pointers where a user can fire a ‘laser’ like pointer and it will teleport them to a destination based on where it is pointed at.
 
 •	One issue with the implementation right now is that the CameraRig (the player) currently have no collision logic with walls which means it can move through walls. Adding a basic collider to the CameraRig doesn’t appear to have any affect and this problem will need to be investigated later.
 
